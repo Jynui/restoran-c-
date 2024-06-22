@@ -1,0 +1,249 @@
+﻿  authentication.cpp
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(5,22): error C2511: bool Authentication::login(const std::string &,const std::string &,std::string &) const: перегруженная функция-член не найдена в "Authentication"
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.h(8,7):
+   см. объявление "Authentication"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(6,20): error C2672: "std::find_if": не найдена соответствующая перегруженная функция
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(6273,31):
+  может быть "_InIt std::find_if(_InIt,const _InIt,_Pr)"
+  	C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(6,20):
+  	"_InIt std::find_if(_InIt,const _InIt,_Pr)": ожидаются аргументы 3 — 2 предоставлены
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(10,9): error C3536: it: не может использоваться до инициализации
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(26,59): error C2556: bool Authentication::removeUser(const std::string &): перегруженная функция отличается от "void Authentication::removeUser(const std::string &)" только возвращаемым типом
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.h(15,10):
+   см. объявление "Authentication::removeUser"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(26,22): error C2371: Authentication::removeUser: переопределение; различные базовые типы
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.h(15,10):
+   см. объявление "Authentication::removeUser"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(38,78): error C2556: bool Authentication::editUser(const std::string &,const User &): перегруженная функция отличается от "void Authentication::editUser(const std::string &,const User &)" только возвращаемым типом
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.h(16,10):
+   см. объявление "Authentication::editUser"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.cpp(38,22): error C2371: Authentication::editUser: переопределение; различные базовые типы
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\authentication.h(16,10):
+   см. объявление "Authentication::editUser"
+  
+  main.cpp
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(140,28): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(190,28): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(204,34): error C2039: "getId": не является членом "User".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(8,7):
+   см. объявление "User"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(205,29): error C2678: бинарный "=": не найден оператор, принимающий левый операнд типа "const User" (или приемлемое преобразование отсутствует)
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(24,1):
+  может быть "User &User::operator =(User &&)"
+  	C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(205,29):
+  	User &User::operator =(User &&): невозможно преобразовать указатель "this" из "const User" в "User &"
+  		C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(205,29):
+  		В результате преобразования теряются квалификаторы
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(24,1):
+  или       "User &User::operator =(const User &)"
+  	C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(205,29):
+  	User &User::operator =(const User &): невозможно преобразовать указатель "this" из "const User" в "User &"
+  		C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(205,29):
+  		В результате преобразования теряются квалификаторы
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(205,29):
+  при попытке сопоставить список аргументов "(const User, User)"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(214,37): error C2039: "getId": не является членом "User".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(8,7):
+   см. объявление "User"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(213,36): error C2663: "std::vector<User,std::allocator<User>>::erase": нет перегруженной функции с допустимым преобразованием для указателя "this"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(1744,27):
+  может быть "std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::erase(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>) noexcept(<expr>)"
+          with
+          [
+              _Ty=User
+          ]
+  	C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(213,36):
+  	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::erase(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>) noexcept(<expr>): невозможно преобразовать указатель "this" из "const std::vector<User,std::allocator<User>>" в "std::vector<User,std::allocator<User>> &"
+          with
+          [
+              _Ty=User
+          ]
+  		C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(213,25):
+  		В результате преобразования теряются квалификаторы
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(213,36):
+  при попытке сопоставить список аргументов "(_FwdIt, std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>)"
+          with
+          [
+              _FwdIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<User>>>
+          ]
+          and
+          [
+              _Ty=User
+          ]
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(220,53): error C2039: "getId": не является членом "User".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(8,7):
+   см. объявление "User"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(220,132): error C2039: "getSurname": не является членом "User".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(8,7):
+   см. объявление "User"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(220,169): error C2039: "getName": не является членом "User".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(8,7):
+   см. объявление "User"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(220,213): error C2039: "getPatronymic": не является членом "User".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\user.h(8,7):
+   см. объявление "User"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(249,35): error C2039: "findItemById": не является членом "Menu".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.h(9,7):
+   см. объявление "Menu"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(251,23): error C2512: Order: нет подходящего конструктора по умолчанию
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.h(16,7):
+   см. объявление "Order"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(252,23): error C2039: "setId": не является членом "Order".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.h(16,7):
+   см. объявление "Order"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(253,23): error C2039: "setClient": не является членом "Order".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.h(16,7):
+   см. объявление "Order"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\main.cpp(282,35): error C2039: "findItemById": не является членом "Menu".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.h(9,7):
+   см. объявление "Menu"
+  
+  menu.cpp
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(6,7): error C2600: Menu::Menu: нельзя определить специальную функцию-член, созданную компилятором (сначала необходимо объявить ее в классе)
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(6,16): error C2614: Menu: недопустимая инициализация члена: "nextId" не является базовым классом или членом
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(6,7):
+  Сообщение диагностики возникло в созданной компилятором функции "Menu::Menu(void)"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(9,24): error C2065: nextId: необъявленный идентификатор
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(9,10): error C2672: "std::vector<MenuItem,std::allocator<MenuItem>>::emplace_back": не найдена соответствующая перегруженная функция
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(860,33):
+  может быть "decltype(auto) std::vector<MenuItem,std::allocator<MenuItem>>::emplace_back(_Valty &&...)"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(12,165): error C2556: bool Menu::editItem(int,const std::string &,const std::vector<Product,std::allocator<Product>> &,const std::string &,double,double): перегруженная функция отличается от "void Menu::editItem(int,const std::string &,const std::vector<Product,std::allocator<Product>> &,const std::string &,double,double)" только возвращаемым типом
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.h(12,10):
+   см. объявление "Menu::editItem"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(12,12): error C2371: Menu::editItem: переопределение; различные базовые типы
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.h(12,10):
+   см. объявление "Menu::editItem"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(28,31): error C2556: bool Menu::removeItem(int): перегруженная функция отличается от "void Menu::removeItem(int)" только возвращаемым типом
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.h(13,10):
+   см. объявление "Menu::removeItem"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.cpp(28,12): error C2371: Menu::removeItem: переопределение; различные базовые типы
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu.h(13,10):
+   см. объявление "Menu::removeItem"
+  
+  menu_item.cpp
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(33,30): error C2039: "getDescription": не является членом "MenuItem".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.h(8,7):
+   см. объявление "MenuItem"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(33,30): error C2270: getDescription: модификаторы недопустимы для функций, не являющихся членами
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(34,12): error C2065: description: необъявленный идентификатор
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(37,18): error C2039: "getPreparationTime": не является членом "MenuItem".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.h(8,7):
+   см. объявление "MenuItem"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(37,18): error C2270: getPreparationTime: модификаторы недопустимы для функций, не являющихся членами
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(38,12): error C2065: preparationTime: необъявленный идентификатор
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(41,18): error C2039: "getPrice": не является членом "MenuItem".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.h(8,7):
+   см. объявление "MenuItem"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(41,18): error C2270: getPrice: модификаторы недопустимы для функций, не являющихся членами
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\menu_item.cpp(42,12): error C2065: price: необъявленный идентификатор
+  order.cpp
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(11,56): error C3861: getStatusString: идентификатор не найден
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(11,37): error C2593: неоднозначный "оператор <<"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(480,39):
+  может быть "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(448,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(430,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(412,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(394,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(376,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(358,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(340,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(322,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(303,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(277,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(258,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(224,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(206,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(200,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(194,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(189,39):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(686,32):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(730,32):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(766,31):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(811,31):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(928,31):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(934,31):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(939,31):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(945,31):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(1080,32):
+  или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)"
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(11,37):
+  при попытке сопоставить список аргументов "(std::basic_ostream<char,std::char_traits<char>>, unknown-type)"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(33,20): error C2039: "getStatusString": не является членом "Order".
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.h(16,7):
+   см. объявление "Order"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(33,20): error C2270: getStatusString: модификаторы недопустимы для функций, не являющихся членами
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(34,13): error C2065: status: необъявленный идентификатор
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(34,21): error C2050: значение выражения для варианта выбора не является целым
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(41,23): error C2838: "CANCELLED": недопустимое полное имя в объявлении члена
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(41,23): error C2065: CANCELLED: необъявленный идентификатор
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(41,23): error C2131: выражение не определяется константой
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(41,23):
+  обнаружено неконстантное (под)выражение
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\order.cpp(41,5): error C2051: значение выражения для варианта выбора не является константой
+  utils.cpp
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\utils.cpp(49,73): error C2039: "function": не является членом "std".
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iostream(18,1):
+   см. объявление "std"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\utils.cpp(49,81): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\utils.cpp(49,81): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\utils.cpp(49,20): error C2511: std::string Utils::getStringInput(const std::string &,const int): перегруженная функция-член не найдена в "Utils"
+  C:\Users\tagir\source\repos\11pract\11 pract\11 pract\utils.h(6,7):
+   см. объявление "Utils"
+  
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\utils.cpp(55,13): error C3861: validator: идентификатор не найден
+C:\Users\tagir\source\repos\11pract\11 pract\11 pract\utils.cpp(59,26): error C2065: errorMsg: необъявленный идентификатор
+  Создание кода...
